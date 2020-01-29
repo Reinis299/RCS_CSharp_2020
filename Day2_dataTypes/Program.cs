@@ -7,7 +7,14 @@ namespace Day2_dataTypes
         static void Main(string[] args)
         {
  
+            //cilveks ievada skaitli
+            //parbaudam vai ir lielaks par pieci
+            //ja ir ##
+            //ja nav #
 
+            //Majas- sameklet ka parbaudit divus nosacijumus
+            //un parbaudit vai cilveks ievada pareiza garuma String
+            //un vai sis String ir vienads ar "aaa"
 
         }
 
