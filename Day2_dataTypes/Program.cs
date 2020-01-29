@@ -14,7 +14,7 @@ namespace Day2_dataTypes
 
             //Majas- sameklet ka parbaudit divus nosacijumus
             //un parbaudit vai cilveks ievada pareiza garuma String
-            //un vai sis String ir vienads ar "aaa"
+            //un vai sis String ir vienads ar "aaaaaaaaaa"
 
         }
 
