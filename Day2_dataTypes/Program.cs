@@ -6,11 +6,19 @@ namespace Day2_dataTypes
     {
         static void Main(string[] args)
         {
- 
-            //cilveks ievada skaitli
-            //parbaudam vai ir lielaks par pieci
-            //ja ir ##
-            //ja nav #
+
+
+            Console.WriteLine("Ievadiet skaitli!");
+            String input = Console.ReadLine();
+            
+            if(input.Length >= 8 && input == "aaaaaaaa")
+            {
+                Console.WriteLine("Viss ok");
+            }
+            else
+            {
+                Console.WriteLine("Nav ok");
+            }
 
             //Majas- sameklet ka parbaudit divus nosacijumus
             //un parbaudit vai cilveks ievada pareiza garuma String
@@ -88,6 +96,26 @@ namespace Day2_dataTypes
             int rezultats = pasreizejais - dzimsanas;
             //Izvadam Vecums ir xx
             Console.WriteLine("Jusu vecums ir " + rezultats);
+        }
+
+        static void uzdevums2()
+        {
+            //cilveks ievada skaitli
+            //parbaudam vai ir lielaks par pieci
+            //ja ir ##
+            //ja nav #
+            Console.WriteLine("Ievadiet skaitli!");
+            String input = Console.ReadLine();
+            int skaitlis = Convert.ToInt32(input);
+            if (skaitlis > 5)
+            {
+                Console.WriteLine("##");
+            }
+            else
+            {
+                Console.WriteLine("#");
+            }
+
         }
     }
 }
