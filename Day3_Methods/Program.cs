@@ -13,6 +13,7 @@ namespace Day3_Methods
             //Cilveks ievada skaitli
             //Uztaisam metodi kas atgriez (return) vai skaitlis ir pozitivs vai negativs
             int skaitlis = skaitlaIevade();
+            
             Console.WriteLine(pozNeg(skaitlis));
 
 
