@@ -6,6 +6,75 @@ namespace Day3_Methods
     {
         static void Main(string[] args)
         {
+            /*bool a = true;
+            a = false;
+            a = !a;
+            Console.WriteLine(a);*/
+            //Cilveks ievada skaitli
+            //Uztaisam metodi kas atgriez (return) vai skaitlis ir pozitivs vai negativs
+            int skaitlis = skaitlaIevade();
+            Console.WriteLine(pozNeg(skaitlis));
+
+
+        }
+
+        static bool pozNeg(int sk)
+        {
+            if(sk > 0)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+
+        static void refactorTask()
+        {
+            //Cilveks ievada tris skaitlus- int
+            //Jaizvada lielakais
+
+
+            int skaitlis1 = skaitlaIevade();
+            int skaitlis2 = skaitlaIevade();
+            int skaitlis3 = skaitlaIevade();
+
+            //1. variants
+            int biggest = biggestNumber(skaitlis1, skaitlis2);
+            biggest = biggestNumber(biggest, skaitlis3);
+            Console.WriteLine("Rezultats ir " + biggest);
+        }
+
+        static int biggestNumber(int a, int b)
+        { 
+            if (a > b)
+            {
+                return a;
+            }
+            else
+            {
+                return b;
+            }
+        }
+
+        static int skaitlaIevade()
+        {
+            Console.WriteLine("Ievadiet skaitli!");
+            String skaitlaIevade = Console.ReadLine();
+            int skaitlis = Convert.ToInt32(skaitlaIevade);
+            return skaitlis;
+        }
+
+        static int saisinataSkaitlaIevade()
+        {
+            Console.WriteLine("Ievadiet skaitli!");
+            return Convert.ToInt32(Console.ReadLine());
+        }
+
+
+        static void tasks1To3()
+        {
             String a = piemers5();
             Console.WriteLine(a);
             /*piemers1();
