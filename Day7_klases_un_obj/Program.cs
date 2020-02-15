@@ -7,7 +7,7 @@ namespace Day7_klases_un_obj
         static void Main(string[] args)
         {
 
-            task1();
+            objEx1();
 
 
 
@@ -33,6 +33,7 @@ namespace Day7_klases_un_obj
 
         static void task2()
         {
+
             //Klases nosaukums ir trijsturis
             //Cilveks ievada 3 malu vertibas - mainigie jaunaja klase
             //Metodi, kas izvada perimetru mala + mala + mala
@@ -67,6 +68,32 @@ namespace Day7_klases_un_obj
             String skaitlaIevade = Console.ReadLine();
             int skaitlis = Convert.ToInt32(skaitlaIevade);
             return skaitlis;
+        }
+
+        static void objEx1()
+        {
+            ObjExample obj = new ObjExample();
+            obj.setA(1);
+            obj.setB(2);
+            obj.print();
+
+            obj.setA(5);
+            obj.print();
+
+            ObjExample obj2 = new ObjExample();
+            obj2.print();
+        }
+
+        static void task3()
+        {
+            //jauna klase- TrijsturisObj
+            //metodes no klases Trijsturis.cs
+
+            //uztaisit 2 trijsturi-
+            TrijsturisObj tr1 = new TrijsturisObj();
+            TrijsturisObj tr2 = new TrijsturisObj();
+            //vienu ar pareizam malu vertibam
+            //otru, kur divas malas ir 0
         }
     }
 }
