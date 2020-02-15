@@ -10,11 +10,7 @@ namespace Day7_klases_un_obj
             task1();
 
 
-            //Klases nosaukums ir trijsturis
-            //Cilveks ievada 3 malu vertibas - mainigie jaunaja klase
-            //Metodi, kas izvada perimetru mala + mala + mala
-            //visa ievade un izvade notiek no main- WriteLine un ReadLine
-            //ja kada mala ir 0, par to ir japazino
+
         }
 
         static void task1()
@@ -32,6 +28,36 @@ namespace Day7_klases_un_obj
             SkaitluSumma.setB(sk2);
 
             SkaitluSumma.Summa();
+
+        }
+
+        static void task2()
+        {
+            //Klases nosaukums ir trijsturis
+            //Cilveks ievada 3 malu vertibas - mainigie jaunaja klase
+            //Metodi, kas izvada perimetru mala + mala + mala
+            //visa ievade un izvade notiek no main- WriteLine un ReadLine
+            //ja kada mala ir 0, par to ir japazino
+            int mala1 = skaitlaIevade();
+            int mala2 = skaitlaIevade();
+            int mala3 = skaitlaIevade();
+
+            Trijsturis.setMala1(mala1);
+            Trijsturis.setMala2(mala2);
+            Trijsturis.setMala3(mala3);
+            //1. variants
+            int perimetrs = Trijsturis.perimetrs();
+            if(perimetrs > 0)
+            {
+                Console.WriteLine("Perimetrs ir " + perimetrs);
+            }
+            else
+            {
+                Console.WriteLine("Kluda!");
+            }
+
+            //2. varints
+            Console.WriteLine(Trijsturis.perimetrs2());
 
         }
 
